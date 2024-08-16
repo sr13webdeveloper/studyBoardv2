@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBoard v2.13</title>
+    <link rel="stylesheet" href="./CSS/style-main.css"> 
+    <link rel="stylesheet" href="./CSS/style-page.css">
+</head>
+<body>
+    <header>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <main>
+        <aside id="sidebar">
+            <button class="navbarLinks active" value="Home" onclick="openLink(event, './Pages/Home.html')">Dashboard</button>
+            
+            <div class="accordion">
+                <button class="navbarLinks accordion-button" onclick="toggleAccordion(event)">HTML</button>
+                <div class="panel">
+                    <button class="navbarLinks" onclick="openLink(event, './Pages/H101.html')" id="navDefaultOpen">101 Introduction</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H102.html')">102 HTML Structure</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H103.html')">103 Types of Tags</button>
+
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H104.html')">104 Attributes</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H105.html')">105 Head Section Tags</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H106.html')">106 Body Tags - Image</button>
+
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H107.html')">107 Relative vs Absolute</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H108.html')">108 Heading Tags</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H109.html')">109 Block vs Inline Elements</button>
+
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H110.html')">110 Lists & Links</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H111.html')">111 Table Tag</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H112.html')">112 HTML Forms</button>
+
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H113.html')">113 Form Elements</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/H114.html')">114 Validations</button>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <button class="navbarLinks accordion-button" onclick="toggleAccordion(event)">CSS</button>
+                <div class="panel">
+                    <button class="navbarLinks" onclick="openLink(event, './pages/C101.html')">101</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/C102.html')">102</button>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <button class="navbarLinks accordion-button" onclick="toggleAccordion(event)">JS</button>
+                <div class="panel">
+                    <button class="navbarLinks" onclick="openLink(event, './pages/J101.html')">101</button>
+                    <button class="navbarLinks" onclick="openLink(event, './pages/J102.html')">102</button>
+                </div>
+            </div>
+        </aside>
+        
+        <article id="tabcontent" class="mainContent">
+        </article>
+    </main>
+
+    <script src="./JS/jsFetch.js"></script>
+    <script src="./JS/jsAccordion.js"></script>
+    <script src="./JS/jsMenu.js"></script>
+</body>
+</html>

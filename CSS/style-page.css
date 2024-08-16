@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+    padding: 40px 70px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    margin: 1rem 0;
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    margin: 1rem 0;
+}
+
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    margin: 1rem 0;
+}
+
+h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin: 1rem 0;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0.8rem 0;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.code{
+    background-color: #F3F4F4;
+    border: 1px solid #E7EAED;
+    padding: 0 0.125rem;
+    border-radius: 3px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.9em;
+}
